@@ -1,0 +1,50 @@
+@media screen and (min-width: 675px) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        margin: 0;
+        max-width: 635px;
+
+        .description {
+            padding: 2.5rem;
+    
+            h1 {
+                font-size: 1.5rem;
+            }
+    
+            h3 {
+                font-size: 1.1rem;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .container {
+            flex-direction: row;
+
+            .subscribe, .why-us {
+                flex: 1;
+                padding: 2.5rem;
+            }
+
+            .subscribe {
+                border-bottom-left-radius: 5px;
+            }
+
+            .why-us {
+                border-bottom-left-radius: 0;
+
+                ul {
+                    li {
+                        font-size: 0.95rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

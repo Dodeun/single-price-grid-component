@@ -10,5 +10,115 @@
 }
 
 body {
-    background-color: $test-color;
+    background-color: $c_bg_body;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 10vh 0;
+    width: calc(100% - 64px);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px hsla(0, 0%, 0%, 0.1);
+
+    .description {
+        background-color: $c_bg_top;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 2rem 1.5rem;
+
+        h1 {
+            font-weight: 700;
+            color: $c_txt_main;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-weight: 700;
+            color: $c_txt_accentuate;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-weight: 400;
+            color: $c_txt_secondary_dark;
+            font-size: 0.85rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-weight: 700;
+            color: $c_txt_secondary_light;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .subscribe {
+            background-color: $c_bg_middle;
+            padding: 1.5rem;
+
+            .price {
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                color: rgba($c_txt_secondary_light, 0.6);
+                margin-bottom: 0.5rem;
+
+                span {
+                    font-weight: 700;
+                    font-size: 2rem;
+                    color: $c_txt_secondary_light;
+                    margin-right: 0.8rem;
+                }
+            }
+
+            .deal {
+                color: $c_txt_secondary_light;
+                margin-bottom: 2rem;
+            }
+
+            a {
+                display: block;
+                text-align: center;
+                width: 100%;
+                background-color: $c_bg_button;
+                padding: 1rem;
+                border-radius: 5px;
+                text-decoration: none;
+                color: $c_txt_button;
+                box-shadow: 0 5px 10px 5px hsla(0, 0%, 0%, 0.1);
+                transition: background-color 0.1s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: darken($color: $c_bg_button, $amount: 10%);
+                }
+            }
+        }
+
+        .why-us {
+            background-color: $c_bg_bottom;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 1.5rem;
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    font-size: 0.9rem;
+                    line-height: 1.2rem;
+                    color: rgba($c_txt_secondary_light, 0.7);
+                }
+            }
+        }
+    }
 }
